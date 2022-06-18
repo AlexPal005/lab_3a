@@ -386,25 +386,23 @@ node* Tree::successor(node* p)
     }
     return y;
 }
-void Tree::search()
+node* Tree::search(int value)
 {
     if (root == NULL)
     {
         cout << "\nEmpty Tree\n";
-        return;
+        return root;
     }
-    int x;
-    cout << "\n Enter key of the node to be searched: ";
-    cin >> x;
+
     node* p = root;
     int found = 0;
     while (p != NULL && found == 0)
     {
-        if (p->key == x)
+        if (p->key == value)
             found = 1;
         if (found == 0)
         {
-            if (p->key < x)
+            if (p->key < value)
                 p = p->right;
             else
                 p = p->left;
@@ -436,4 +434,5 @@ void Tree::search()
         cout << endl;
 
     }
+    return p;
 }

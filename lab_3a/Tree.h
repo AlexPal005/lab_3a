@@ -32,7 +32,7 @@ public:
 	void delfix(node* p);
 	node* successor(node*);
 	/**Пошук елемента*/
-	void search();
+	node* search(int value);
 private:
 	/** Вказівник на корінь*/
 	node* root; 

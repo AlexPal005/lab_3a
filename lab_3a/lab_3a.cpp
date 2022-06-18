@@ -23,7 +23,11 @@ int main() {
             break;
         case 2: obj.del();
             break;
-        case 3: obj.search();
+        case 3: 
+            int x;
+            cout << "\n Enter key of the node to be searched: ";
+            cin >> x;
+            obj.search(x);
             break;
         case 4: obj.disp();
             break;
