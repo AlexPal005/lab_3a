@@ -1,10 +1,8 @@
 #include "Tree.h"
 
-void Tree::insert()
+void Tree::insert(int z)
 {
-    int z, i = 0;
-    cout << "\nEnter key of the node to be inserted: ";
-    cin >> z;
+    int i = 0;
     node* p, * q;
     node* t = new node;
     t->key = z;

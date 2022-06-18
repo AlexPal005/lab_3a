@@ -14,7 +14,11 @@ int main() {
         cin >> ch;
         switch (ch)
         {
-        case 1: obj.insert();
+        case 1: 
+            cout << "\nEnter key of the node to be inserted: ";
+            int z;
+            cin >> z;
+            obj.insert(z);
             cout << "\nNode Inserted.\n";
             break;
         case 2: obj.del();

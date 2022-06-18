@@ -18,11 +18,11 @@ public:
 		root = NULL;
 	}
 	/**Вставка елемента*/
-	void insert();
+	void insert(int z);
 	void insertfix(node*);
 	/**Лівий поворот*/
 	void leftrotate(node*);
-	/**Правий поворот поворот*/
+	/**Правий поворот */
 	void rightrotate(node*);
 	/**Показати дерево*/
 	void disp();
