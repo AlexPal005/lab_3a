@@ -17,9 +17,9 @@ int main() {
         case 1: obj.insert();
             cout << "\nNode Inserted.\n";
             break;
-        case 2: //obj.del();
+        case 2: obj.del();
             break;
-        case 3: //obj.search();
+        case 3: obj.search();
             break;
         case 4: obj.disp();
             break;

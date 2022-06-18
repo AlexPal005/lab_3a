@@ -17,14 +17,25 @@ public:
 		q = NULL;
 		root = NULL;
 	}
-	void insert();/**Вставка елемента*/
+	/**Вставка елемента*/
+	void insert();
 	void insertfix(node*);
-	void leftrotate(node*);/**Правий поворот*/
-	void rightrotate(node*);/**Лівий поворот*/
-	void disp();/**Показати дерево*/
+	/**Лівий поворот*/
+	void leftrotate(node*);
+	/**Правий поворот поворот*/
+	void rightrotate(node*);
+	/**Показати дерево*/
+	void disp();
 	void display(node*);
+	/**Видалити елемент*/
+	void del();
+	void delfix(node* p);
+	node* successor(node*);
+	/**Пошук елемента*/
+	void search();
 private:
-	node* root; /** Вказівник на корінь*/
+	/** Вказівник на корінь*/
+	node* root; 
 	node* q;
 
 
