@@ -28,7 +28,7 @@ public:
 	void disp();
 	void display(node*);
 	/**Видалити елемент*/
-	void del();
+	void del(int val);
 	void delfix(node* p);
 	node* successor(node*);
 	/**Пошук елемента*/

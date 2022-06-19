@@ -21,7 +21,11 @@ int main() {
             obj.insert(z);
             cout << "\nNode Inserted.\n";
             break;
-        case 2: obj.del();
+        case 2: 
+            int v;
+            cout << "\nEnter the key of the node to be deleted: ";
+            cin >> v; 
+            obj.del(v);
             break;
         case 3: 
             int x;

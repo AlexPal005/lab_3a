@@ -210,16 +210,13 @@ void Tree::display(node* p)
          cout<<"\nNo Right Child.\n"*/
     }
 }
-void Tree::del()
+void Tree::del(int val)
 {
     if (root == NULL)
     {
         cout << "\nEmpty Tree.";
         return;
     }
-    int x;
-    cout << "\nEnter the key of the node to be deleted: ";
-    cin >> x;
     node* p;
     p = root;
     node* y = NULL;
@@ -227,11 +224,11 @@ void Tree::del()
     int found = 0;
     while (p != NULL && found == 0)
     {
-        if (p->key == x)
+        if (p->key == val)
             found = 1;
         if (found == 0)
         {
-            if (p->key < x)
+            if (p->key < val)
                 p = p->right;
             else
                 p = p->left;

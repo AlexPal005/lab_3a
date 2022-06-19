@@ -32,7 +32,10 @@ namespace UnitTest
 			for (int i = 0; i < 5; i++) {
 				test.insert(arr_test[i]);
 			}
-
+			test.del(7);
+			Assert::AreEqual(8, test.search(6)->right->key);
+			Assert::AreEqual('r', test.search(6)->right->color);
+			Assert::AreEqual(4, test.search(6)->parent->key);
 		}
 	};
 }
