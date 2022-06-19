@@ -162,7 +162,11 @@ void Tree::rightrotate(node* p)
 
 void Tree::disp()
 {
+    clock_t start = clock();
     display(root);
+    clock_t end = clock();
+    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
+    printf("The time: %f seconds\n", seconds);
 }
 
 void Tree::display(node* p)
@@ -199,15 +203,11 @@ void Tree::display(node* p)
             cout << "\n\nLeft:\n";
             display(p->left);
         }
-        /*else
-         cout<<"\nNo Left Child.\n";*/
         if (p->right)
         {
             cout << "\n\nRight:\n";
             display(p->right);
         }
-        /*else
-         cout<<"\nNo Right Child.\n"*/
     }
 }
 void Tree::del(int val)

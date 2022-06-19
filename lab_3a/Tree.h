@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <time.h>
 using namespace std;
 /**
 *  Структура вузла, що містить ключ, вказівники на батька та потомків, колір вузла
